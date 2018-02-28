@@ -1,3 +1,8 @@
+/*
+    This file contains css related to 
+    index.html, signup.html, login.html
+*/
+
 // This function gets called when the window gets loaded
 function windowOnLoad() {
     $(".the-body").removeClass("body-no-scroll");
