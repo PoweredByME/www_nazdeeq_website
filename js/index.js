@@ -1,0 +1,14 @@
+// This function gets called when the window gets loaded
+function windowOnLoad() {
+    $(".the-body").removeClass("body-no-scroll");
+}
+
+// This function gets called when the window gets resized
+function windowOnResize() {
+
+}
+
+// This function gets called when the window gets scrolled
+function windowOnScroll() {
+
+}
