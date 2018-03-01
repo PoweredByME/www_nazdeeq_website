@@ -21,6 +21,10 @@
    .site-theme-grey-text
    .site-theme-light-grey
    .site-theme-light-grey-text
+   .fw-200
+   .fw-400
+   .fw-600
+   .site-btn-hover
    -------------------------------
 */
 
@@ -78,4 +82,25 @@
 
 .site-theme-light-grey-text {
     color: #767676 !important;
+}
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-200 {
+    font-weight: 200 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.site-anime {
+    transition-property: all !important;
+    transition-duration: 0.3s !important;
+}
+
+.site-btn-hover:hover {
+    filter: brightness(110%) !important;
 }
