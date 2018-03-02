@@ -9,42 +9,6 @@
     Code taken from https://codepen.io/davidelrizzo/pen/vEYvyv
 */
 
-.sp-teal{
-    background-color: #fafafa !important;
-    position: absolute;
-    top: 80px;
-    width: 500px;
-    padding: 24px;
-    margin: auto;
-}
-
-.sp-row{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    width: 40%;
-    position: absolute;
-    bottom: 800px;
-}
-
-
-.sp-wrapper{
-    position: relative;
-    width: 100vw;
-    display: flex;
-}
-
-.sp-bg{
-    position: relative;
-    right: 250px;
-}
-
-.sp-bt{
-    position: absolute;
-    width: 40%;
-    top: 20px;
-}
-
 .sp-lgi-login-btn {
     box-sizing: border-box;
     position: relative;
@@ -116,4 +80,83 @@
 .sp-lgi-login-btn--google:hover,
 .sp-lgi-login-btn--google:focus {
     background: rgb(228, 84, 65);
+}
+
+
+/*
+    Code by  Daniyal 
+*/
+
+.sp-teal {
+    background-color: #fafafa !important;
+    position: absolute;
+    top: 80px;
+    width: 500px;
+    padding: 24px;
+    margin: auto;
+}
+
+.sp-row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 40%;
+    position: absolute;
+    bottom: 800px;
+}
+
+.sp-wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('/assets/img/bgn.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sp-bg {
+    position: relative;
+    right: 250px;
+}
+
+.sp-lgi-content-container {
+    display: flex;
+}
+
+.sp-lgi-card-container {
+    width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 56px;
+    padding-bottom: 48px;
+}
+
+.sp-lgi-card {
+    padding: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.sp-lgi-form-div {
+    margin-top: 36px;
+}
+
+.error-div {
+    padding: 6px;
+}
+
+.error-text {
+    margin: 6px;
+    text-align: center;
+}
+
+.lgi-fp-a {
+    display: block;
+}
+
+.sp-btn {
+    padding: 16px !important;
+    width: 108px;
+    border: none;
+    border-radius: 3px;
 }
