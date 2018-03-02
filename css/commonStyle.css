@@ -25,6 +25,7 @@
    .fw-400
    .fw-600
    .site-btn-hover
+   .site-anime
    -------------------------------
 */
 
@@ -102,5 +103,9 @@
 }
 
 .site-btn-hover:hover {
+    filter: brightness(110%) !important;
+}
+
+.site-btn-hover:focus {
     filter: brightness(110%) !important;
 }
