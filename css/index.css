@@ -9,6 +9,42 @@
     Code taken from https://codepen.io/davidelrizzo/pen/vEYvyv
 */
 
+.sp-teal{
+    background-color: #fafafa !important;
+    position: absolute;
+    top: 80px;
+    width: 500px;
+    padding: 24px;
+    margin: auto;
+}
+
+.sp-row{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 40%;
+    position: absolute;
+    bottom: 800px;
+}
+
+
+.sp-wrapper{
+    position: relative;
+    width: 100vw;
+    display: flex;
+}
+
+.sp-bg{
+    position: relative;
+    right: 250px;
+}
+
+.sp-bt{
+    position: absolute;
+    width: 40%;
+    top: 20px;
+}
+
 .sp-lgi-login-btn {
     box-sizing: border-box;
     position: relative;
