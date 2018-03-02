@@ -39,50 +39,69 @@
 
     <!-- Code sign up page -->
 
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-        </div>
-      </nav>
 
-    
-    <div class="sp-wrapper">
-        <img class="responsive-img sp-bg" src="assets\img\bg.jpg">
-        <div class="sp-bt">
-                <button class="sp-lgi-login-btn sp-lgi-login-btn--facebook">
-                    Continue with Facebook
-                </button>
+    <div class="sp-wrapper valign-wrapper">
+        <div class="container sp-lgi-content-container">
+            <div class="sp-lgi-card-container center">
+                <div>
+                    <!-- fb & google buttton -->
+                    <a href="#!">
+                        <button class="sp-lgi-login-btn sp-lgi-login-btn--facebook">
+                            Continue with Facebook
+                        </button>
+                    </a>
 
-                <button class="sp-lgi-login-btn sp-lgi-login-btn--google">
-                    Continue with Google
-                  </button>
+                    <a href="#!">
+                        <button class="sp-lgi-login-btn sp-lgi-login-btn--google">
+                            Continue with Google +
+                        </button>
+                    </a>
+
+
+                </div>
+                <div class="card sp-lgi-card">
+                    <h1 class="aki center">Sign Up to Nazdeeq</h1>
+                    <div class="sp-lgi-form-div">
+                        <form action="#!">
+                            <input class="ak-field-text" type="text" name="fullName" placeholder="Full Name">
+                            <input class="ak-field-email" type="email" name="email" placeholder="Email">
+                            <input class="ak-field-text" type="text" name="interests" placeholder="Interests">
+
+                            <div class="row">
+                                <div class="col l6 m6 s12">
+                                    <input class="ak-field-password" type="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="col l6 m6 s12">
+                                    <input class="ak-field-password" type="password" name="c-password" placeholder="Confirm Password">
+                                </div>
+                            </div>
+
+                            <div class="error-div red hide">
+                                <p class="error-text"></p>
+                            </div>
+
+
+                            <div class="center">
+                                <input type="submit" class="sp-btn  center site-theme-orange site-theme-white-text site-anime site-btn-hover" value="Sign Up">
+                                <p class="site-theme-light-grey-text center" style="font-size:14px;">Already have an account?</p>
+                                <a href="#!" class="site-theme-orange-text">LOG IN NOW</a>
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-                  <div class="sp-teal">
-                    <h1 class="black-text center fw-600 aki">Login to Nazdeeq</h1>
-                    <br>
-                    <form action="#!">
-                        <input class="ak-field-text" type="text" name="username" placeholder="username">
-                        <input class="ak-field-text" type="password" name="password" placeholder="password">
-                        <br>
-                        <a class="site-theme-orange-text" >Forget Password?</a>
-                        <br>
-                        <input type="submit" class="ak-button site-theme-orange site-theme-white-text site-anime site-btn-hover" value="Log In">
-                        <br>
-                        <br>
-                        <a class="site-theme-orange-text" >Don't have an account?</a>
-                        <br>
-                        <a class="site-theme-orange-text" >CREATE ONE NOW</a>
-                    </form>
-              </div>
+
     </div>
-    
 
-   
+
+
+
+
 
 
 
@@ -99,3 +118,23 @@
 </body>
 
 </html>
+
+
+
+<!--
+
+    Form element names : 
+    --------------------
+    
+    Full Name -> fullName
+    Email -> email
+    Interests -> interests
+    Password -> password
+    Confirm Password -> c-password
+-->
+
+<!-- JUNK
+
+    <a href="#!" class="site-theme-orange-text center lgi-fp-a">Forget Password?</a>
+
+-->
