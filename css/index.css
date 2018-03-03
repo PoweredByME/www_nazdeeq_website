@@ -22,7 +22,6 @@
     border-radius: 0.2em;
     font-size: 14px;
     color: #FFF;
-    transform: scale(0.9);
 }
 
 .sp-lgi-login-btn:before {
@@ -82,6 +81,7 @@
 */
 
 .sp-wrapper {
+    margin-top: -64px;
     width: 100vw;
     min-height: 100vh;
     background-image: url('/assets/img/bgn.png');
@@ -130,4 +130,10 @@
     width: 108px;
     border: none;
     border-radius: 3px;
+}
+
+@media screen and (max-width:992px) {
+    .sp-wrapper {
+        margin-top: 0px;
+    }
 }
