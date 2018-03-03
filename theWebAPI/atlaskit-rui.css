@@ -6,7 +6,6 @@
     display: inline-flex !important;
     font-style: normal !important;
     font-size: inherit !important;
-    height: 2.28571429em !important;
     line-height: 2.28571429em !important;
     margin: 0 !important;
     outline: none !important;
@@ -568,7 +567,7 @@ button.aki[data-ak-tooltip][data-ak-tooltip-position='left']::after {
 .ak-field-select:focus,
 .ak-field-textarea:focus {
     background-color: #FFFFFF !important;
-    border-color: #4C9AFF !important;
+    border-color: #ef7246 !important;
     border-width: 2px !important;
     padding: 8px 6px !important;
 }
