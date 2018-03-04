@@ -131,8 +131,22 @@
     border-radius: 3px;
 }
 
+.sp-password {
+    margin-bottom: 6px !important;
+}
+
+.c-sp-password {
+    margin-bottom: 6px !important;
+}
+
 @media screen and (max-width:992px) {
     .sp-wrapper {
         margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .sp-password {
+        margin-bottom: 20px !important;
     }
 }
