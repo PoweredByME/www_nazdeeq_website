@@ -75,3 +75,28 @@ function onSignUpLoad() {
         $('.select-dropdown').val("Choose your Interests");
     })
 }
+
+function getSearchLinksString(explore_links,popular_searches){
+    var links_starting_row='<div class="row"><div class="col l2 left-align"><h6>Explore Amazon</h6></div></div><div style="margin-left: auto;" class="row left-align sugg-links"><a class="btn btn-options default-sugg-btn z-depth-0" >All</a>';
+    var explore_buttons="";
+    for(i in explore_links){
+        var temp_button='<a class="btn btn-options white site-theme-grey-text z-depth-0 sugg-btn" href="'+explore_links[i].link+'">'+explore_links[i].Name+'</a>';
+        explore_buttons+=temp_button;
+    }
+    links_starting_row+=explore_buttons;
+    links_starting_row+='</div>';
+    var search_links="";
+    var searches_starting_row='<div class="row"><div class="col l2 left-align"><h6>PopularSearches</h6></div></div><div class="row left-align sugg-div">';
+    
+    for (i in popular_searches){
+        var temp_searches='<a class="btn-options site-theme-pink-text" href="'+popular_searches[i].link+'">'+popular_searches[i].Name+'</a>';
+        search_links+=temp_searches;
+    }
+    searches_starting_row+=search_links;
+    searches_starting_row+='</div>';
+    
+    var final_string=links_starting_row+searches_starting_row;
+    return final_string;
+    
+    
+}
