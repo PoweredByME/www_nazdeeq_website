@@ -181,7 +181,6 @@ tr {
     padding-left: 24px !important;
     padding-right: 4px !important;
     border-radius: 5px;
-    !important;
 }
 
 .shop-btn {
@@ -192,6 +191,22 @@ tr {
 
 .btn-options {
     margin-bottom: 6px !important;
+}
+
+.i-play-vid-btn {
+    height: 132px;
+    width: 132px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.i-play-vid-btn i {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width:992px) {
@@ -248,5 +263,13 @@ tr {
 @media screen and (max-width:600px) {
     .sp-password {
         margin-bottom: 20px !important;
+    }
+    .i-play-vid-btn {
+        height: 108px;
+        width: 108px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
     }
 }
