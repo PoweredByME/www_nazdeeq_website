@@ -116,38 +116,41 @@
                 </p>
 
                 <!-- search bar start -->
-                <form>
-                    <div style="align-items: center;" class="card horizontal search-card">
-                        <i class="small material-icons site-theme-light-grey-text">search</i>
-                        <input class="search-in" placeholder='Search  " MacBook "'>
-                        
-                        <button class="btn shop-btn site-theme-orange" >Shop</button>
-                        <div class="search-results"></div>
-                    </div>
-                </form>
-                <div class="in-suggestions myhideclass">
-                    <div class="row">
-                        <div class="col l2 left-align">
-                            <h6>Explore Amazon</h6>  
+                <div class="card">
+                    <form>
+                        <div style="align-items: center;margin-bottom : 2px;border-bottom : 1px solid #f0f0f0; border-radius : 0px;" class="card horizontal search-card z-depth-0">
+                            <i class="small material-icons site-theme-light-grey-text">search</i>
+                            <input class="search-in" placeholder='Search  " MacBook "'>
+                            <button class="hide-on-small-only btn shop-btn site-theme-orange z-depth-0">
+                                Shop
+                            </button>
+                            <div class="search-results"></div>
                         </div>
-                    </div>
-                    <div style="margin-left: auto;" class="row left-align sugg-links">
-                    <a class="btn btn-options default-sugg-btn z-depth-0" >All</a>
-                    <a class="btn btn-options white site-theme-grey-text z-depth-0 sugg-btn">Books &amp; Edibles</a>
-                        <a class="btn btn-options white site-theme-grey-text z-depth-0 sugg-btn">Electronics, Computers &amp; Office</a>
-                        <a class="btn btn-options white site-theme-grey-text z-depth-0 sugg-btn">Movies, Music &amp; Games</a>
-                    </div>
-                    <div class="row">
-                        <div class="col l2 left-align">
-                            <h6>Popular Searches</h6>  
+                    </form>
+                    <div class="in-suggestions myhideclass">
+                        <div class="row" style="margin-bottom : 0px;">
+                            <div class="col l2 left-align">
+                                <p class="site-theme-light-grey-text fw-400">Explore Amazon</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row left-align sugg-div">
-                        <a class="btn-options site-theme-pink-text">iphoneX</a>
-                        <a class="btn-options site-theme-pink-text">macook pro</a>
-                        <a class="btn-options site-theme-pink-text">note8</a>
-                        <a class="btn-options site-theme-pink-text">Harry Potter</a>
-                        
+                        <div style="margin-left: auto;margin-bottom: 12px;" class="row left-align sugg-links">
+                            <a class="btn btn-options default-sugg-btn z-depth-0">All</a>
+                            <a class="btn btn-options white site-theme-grey-text z-depth-0 sugg-btn">Books &amp; Edibles</a>
+                            <a class="btn btn-options white site-theme-grey-text z-depth-0 sugg-btn">Electronics, Computers &amp; Office</a>
+                            <a class="btn btn-options white site-theme-grey-text z-depth-0 sugg-btn">Movies, Music &amp; Games</a>
+                        </div>
+                        <div class="row" style="margin-bottom:0px">
+                            <div class="col l2 left-align">
+                                <p class="site-theme-light-grey-text fw-400" style="margin-top: 0px;">Popular Searches</p>
+                            </div>
+                        </div>
+                        <div class="row left-align sugg-div">
+                            <a class="btn-options site-theme-pink-text">iphoneX</a>
+                            <a class="btn-options site-theme-pink-text">macook pro</a>
+                            <a class="btn-options site-theme-pink-text">note8</a>
+                            <a class="btn-options site-theme-pink-text">Harry Potter</a>
+
+                        </div>
                     </div>
                 </div>
 
@@ -325,17 +328,34 @@
         window.onscroll = windowOnScroll;
     </script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function() {
             $(".myhideclass").hide();
-            var explore=[{Name:"Books",link:"#"},{Name:"Mobiles",link:"#"},{Name:"Laptops",link:"#"}];
-            var popular=[{Name:"iphonex",link:"#"},{Name:"iphone6s plus",link:"#"},{Name:"macbook pro",link:"#"}];
-            console.log(getSearchLinksString(explore,popular));
-            //$(".myhideclass").html(getSearchLinksString(explore,popular));
-            $(".search-in").keyup(function(){
-                if ($(".search-in").val()==""){
+            var explore = [{
+                name: "Books &amp; Edibles",
+                link: "#"
+            }, {
+                name: "Electronics, Computers &amp; Office",
+                link: "#"
+            }, {
+                name: "Movies, Music &amp; Games",
+                link: "#"
+            }];
+            var popular = [{
+                name: "iphoneX",
+                link: "#"
+            }, {
+                name: "iphone6S+",
+                link: "#"
+            }, {
+                name: "macbook Pro",
+                link: "#"
+            }];
+            console.log(getSearchLinksString(explore, popular));
+            $(".myhideclass").html(getSearchLinksString(explore, popular));
+            $(".search-in").keyup(function() {
+                if ($(".search-in").val() == "") {
                     $(".myhideclass").hide(500);
-                }
-                else $(".myhideclass").show(500);
+                } else $(".myhideclass").show(500);
             })
         })
     </script>
