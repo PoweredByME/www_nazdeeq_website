@@ -197,6 +197,7 @@
 }
 .sugg-links a{
     text-transform:none !important;
+    margin-right: 8px !important;
     
 }
 .sugg-btn:hover{

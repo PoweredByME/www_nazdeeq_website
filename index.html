@@ -327,6 +327,10 @@
     <script>
         $(document).ready(function(){
             $(".myhideclass").hide();
+            var explore=[{Name:"Books",link:"#"},{Name:"Mobiles",link:"#"},{Name:"Laptops",link:"#"}];
+            var popular=[{Name:"iphonex",link:"#"},{Name:"iphone6s plus",link:"#"},{Name:"macbook pro",link:"#"}];
+            console.log(getSearchLinksString(explore,popular));
+            //$(".myhideclass").html(getSearchLinksString(explore,popular));
             $(".search-in").keyup(function(){
                 if ($(".search-in").val()==""){
                     $(".myhideclass").hide(500);
