@@ -109,3 +109,31 @@
 .site-btn-hover:focus {
     filter: brightness(110%) !important;
 }
+
+.nav-logo-image {
+    margin: 16px;
+    margin-left: 8px;
+}
+
+.nav-fv-option-ul li a {
+    font-weight: 300;
+    transition-property: all !important;
+    transition-duration: 0.3s !important;
+}
+
+.nav-fv-option-ul li a:hover,
+.nav-fv-option-ul li a:focus {
+    color: #eaeaea !important;
+    background-color: rgb(43, 35, 70) !important;
+}
+
+a.site-footer-text {
+    font-size: 12px;
+    transition-property: all !important;
+    transition-duration: 0.3s !important;
+}
+
+a.site-footer-text:hover,
+a.site-footer-text:focus {
+    color: #555555 !important;
+}
