@@ -156,8 +156,11 @@ tr {
 }
 
 .i-search-container {
-    margin-top: 56px;
-    margin-bottom: 56px;
+    margin-bottom: 120px;
+}
+
+.i-search-div {
+    height: calc(100vh - 141px);
 }
 
 .in-s-button {
@@ -180,6 +183,7 @@ tr {
 .search-card {
     padding-left: 24px !important;
     padding-right: 4px !important;
+    margin-top: 42px;
     border-radius: 5px;
 }
 
@@ -207,12 +211,6 @@ tr {
 .i-play-vid-btn i {
     margin-left: auto;
     margin-right: auto;
-}
-
-@media screen and (max-width:992px) {
-    .sp-wrapper {
-        margin-top: 0px;
-    }
 }
 
 .search-in:focus {
@@ -260,9 +258,25 @@ tr {
     border-radius: 3px !important;
 }
 
+.i-amazon-banner {
+    height: 56px;
+}
+
+@media screen and (max-width:992px) {
+    .sp-wrapper {
+        margin-top: 0px;
+    }
+}
+
 @media screen and (max-width:600px) {
     .sp-password {
         margin-bottom: 20px !important;
+    }
+    .i-search-div {
+        min-height: 40vh;
+    }
+    .i-search-container {
+        margin-bottom: 0px;
     }
     .i-play-vid-btn {
         height: 108px;

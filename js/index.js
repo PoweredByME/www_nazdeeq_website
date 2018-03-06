@@ -3,10 +3,15 @@
     index.html, signup.html, login.html
 */
 
+/* use this function to set the explore and popular lists of search bar
+function search_bar_set_explore_popular_list(explore, popular)
+*/
+
 // This function gets called when the window gets loaded
 function windowOnLoad() {
     $(".the-body").removeClass("body-no-scroll");
     $(".button-collapse").sideNav();
+    seachBarInit();
 }
 
 // This function gets called when the window gets resized
@@ -76,13 +81,45 @@ function onSignUpLoad() {
     })
 }
 
+var sb_explore = [];
+var sb_popular = [];
+
+// use this function to set the explore and popular lists of search bar
+function search_bar_set_explore_popular_list(explore, popular) {
+    sb_explore = explore;
+    sb_popular = popular;
+    $(".search-sugg-large").html(getSearchLinksString(sb_explore, sb_popular));
+    $(".search-sugg-small").html(getSearchLinksString(sb_explore, sb_popular));
+}
+
+function seachBarInit() {
+    $(".myhideclass ").hide();
+    $(".search-in-large").keyup(function() {
+        if ($(".search-in-large ").val().trim() == "") {
+            $(".search-sugg-large ").hide(500);
+        } else {
+            $(".search-sugg-large").show(500)
+        };
+    });
+
+    $(".search-in-small").keyup(function() {
+        if ($(".search-in-small").val().trim() == "") {
+            $(".search-sugg-small").hide(500);
+        } else {
+
+            $(".search-sugg-small").show(500)
+        };
+    });
+}
+
+
+
 function getSearchLinksString(explore_links, popular_searches) {
     var links_starting_row = '<div class="row" style="margin-bottom : 0px;"><div class="col l2 left-align"> <p class="site-theme-light-grey-text fw-400">Explore Amazon</p>  </div></div><div style="margin-left: auto;margin-bottom: 12px;" class="row left-align sugg-links"><a class="btn btn-options default-sugg-btn z-depth-0" >All</a>';
     var explore_buttons = "";
     for (i in explore_links) {
         var temp_button = '<a class="btn btn-options white site-theme-grey-text z-depth-0 sugg-btn" href="' + explore_links[i].link + '">' + explore_links[i].name + '</a>';
         explore_buttons += temp_button;
-        console.log(temp_button);
     }
     links_starting_row += explore_buttons;
     links_starting_row += '</div>';
