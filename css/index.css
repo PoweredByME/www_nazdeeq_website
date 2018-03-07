@@ -374,4 +374,11 @@ tr {
         display: flex;
         align-items: center;
     }
+    .vid-div {
+        opacity: 1;
+    }
+    .vid-div-btn {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
