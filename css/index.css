@@ -160,7 +160,9 @@ tr {
 }
 
 .i-search-div {
-    height: calc(100vh - 141px);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    min-height: calc(100vh - 141px);
 }
 
 .in-s-button {
@@ -260,6 +262,92 @@ tr {
 
 .i-amazon-banner {
     height: 56px;
+}
+
+.vid-div {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+.show.vid-div {
+    opacity: 1;
+}
+
+.vid-div-btn {
+    transform: scale(2);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-delay: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.show.vid-div-btn {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.hw-heading {
+    transform: translateY(40px);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+.show.hw-heading {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.hw-col .card {
+    transform: translateY(40px);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+.show.hw-col .card {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.op-heading {
+    transform: translateY(40px);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+.show.op-heading {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.op-col img {
+    transform: translateY(40px);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+.show.op-col img {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.coming-soon-div img {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.coming-soon-div {
+    padding-left: 36px;
 }
 
 @media screen and (max-width:992px) {

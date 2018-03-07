@@ -19,9 +19,27 @@ function windowOnResize() {
 
 }
 
+
+var hw_flag = { flag: false };
+var op_flag = { flag: false };
+var vid_flag = { flag: false };
 // This function gets called when the window gets scrolled
 function windowOnScroll() {
+    var offset = $(window).innerHeight();
+    onScrollAction($(".hw-content-row"), offset * 0.2, hw_flag, function() {
+        $(".hw-col").toggleClass("show");
+        $(".hw-heading").toggleClass("show");
+    });
 
+    onScrollAction($(".op-content-row"), offset * 0.1, op_flag, function() {
+        $(".op-col").toggleClass("show");
+        $(".op-heading").toggleClass("show");
+    });
+
+    onScrollAction($(".vid-div"), offset * 0.4, vid_flag, function() {
+        $(".vid-div").toggleClass("show");
+        $(".vid-div-btn").toggleClass("show");
+    });
 }
 
 function onSignUpLoad() {
@@ -102,6 +120,7 @@ function onSearch(search_str) {
 function seachBarInit() {
     search_bar_set_explore_popular_list(sb_explore, sb_popular);
     $(".myhideclass ").hide();
+    $(".myhideclass ").removeClass("hide");
     var sil_ele = $(".search-in-large");
     var sis_ele = $(".search-in-small");
 
