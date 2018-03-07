@@ -92,24 +92,43 @@ function search_bar_set_explore_popular_list(explore, popular) {
     $(".search-sugg-small").html(getSearchLinksString(sb_explore, sb_popular));
 }
 
+// When the search bar is typed on this function will be called with the string being input in the 
+// search input
+function onSearch(search_str) {
+    console.log(search_str);
+    // ---- Code
+}
+
 function seachBarInit() {
+    search_bar_set_explore_popular_list(sb_explore, sb_popular);
     $(".myhideclass ").hide();
-    $(".search-in-large").keyup(function() {
-        if ($(".search-in-large ").val().trim() == "") {
-            $(".search-sugg-large ").hide(500);
-        } else {
-            $(".search-sugg-large").show(500)
-        };
+    var sil_ele = $(".search-in-large");
+    var sis_ele = $(".search-in-small");
+
+    sil_ele.focus(function() {
+        $(".search-sugg-large").show(500)
+    });
+    sil_ele.focusout(function() {
+        $(".search-sugg-large").hide(500)
     });
 
-    $(".search-in-small").keyup(function() {
-        if ($(".search-in-small").val().trim() == "") {
-            $(".search-sugg-small").hide(500);
-        } else {
-
-            $(".search-sugg-small").show(500)
-        };
+    sis_ele.focus(function() {
+        $(".search-sugg-small").show(500)
     });
+    sis_ele.focusout(function() {
+        $(".search-sugg-small").hide(500)
+    });
+
+    sil_ele.keyup(function() {
+        var search = (sil_ele.val());
+        onSearch(search);
+    });
+
+    sis_ele.keyup(function() {
+        var search = (sis_ele.val());
+        onSearch(search);
+    });
+
 }
 
 
