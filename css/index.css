@@ -160,6 +160,8 @@ tr {
     margin-bottom: 56px;
 }
 
+.i-search-div {
+    padding-top: 88px;
     padding-bottom: 24px;
     min-height: calc(100vh - 141px);
     transition-property: all;
@@ -270,6 +272,7 @@ tr {
     padding-top: 0px !important;
     border-radius: 3px !important;
 }
+
 
 .it-down-btn{
     background: transparent !important;
