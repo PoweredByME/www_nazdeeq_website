@@ -161,7 +161,7 @@ tr {
 }
 
 .i-search-div {
-    padding-top: 88px;
+    padding-top: 64px;
     padding-bottom: 24px;
     min-height: calc(100vh - 141px);
     transition-property: all;
@@ -284,13 +284,18 @@ tr {
     border:1px solid #DFE1E6 !important;
     border-radius: 5px !important;
     height: 3rem !important;
+    cursor: pointer;
     
+}
+.serach-in:hover{
+    cursor: pointer !important;
 }
 
 .i-select-btn{
     padding-left: 8px !important;
     font-size:12px !important;
     padding-right: 8px !important;
+    margin-right: 6px !important;
 }
 .clicked-btn-class{
     background-color: #EC2F85 !important;
