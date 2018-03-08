@@ -160,9 +160,15 @@ tr {
 }
 
 .i-search-div {
-    padding-top: 24px;
+    padding-top: 88px;
     padding-bottom: 24px;
     min-height: calc(100vh - 141px);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.i-search-div-search-focus {
+    padding-top: 24px;
 }
 
 .in-s-button {
@@ -265,7 +271,7 @@ tr {
 }
 
 .vid-div {
-    opacity: 0;
+    opacity: 1;
     transition-property: all;
     transition-duration: 0.4s;
     transition-timing-function: ease-out;

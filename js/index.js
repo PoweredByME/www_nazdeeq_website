@@ -136,12 +136,15 @@ function seachBarInit() {
     $(".myhideclass ").removeClass("hide");
     var sil_ele = $(".search-in-large");
     var sis_ele = $(".search-in-small");
-
+    var isd_ele = $(".i-search-div");
     sil_ele.focus(function() {
+        isd_ele.addClass("i-search-div-search-focus");
         $(".search-sugg-large").show(500)
+
     });
     sil_ele.focusout(function() {
-        $(".search-sugg-large").hide(500)
+        $(".search-sugg-large").hide(500);
+        isd_ele.removeClass("i-search-div-search-focus");
     });
 
     sis_ele.focus(function() {
