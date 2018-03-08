@@ -356,6 +356,20 @@ tr {
     padding-left: 36px;
 }
 
+.b-search-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 48px;
+}
+
+@media screen and (max-width:1107px) {
+    .b-search-item {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 24px;
+    }
+}
+
 @media screen and (max-width:992px) {
     .sp-wrapper {
         margin-top: 0px;
