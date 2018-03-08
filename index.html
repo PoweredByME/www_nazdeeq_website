@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="theWebAPI/atlaskit-rui.css" />
     <link rel="stylesheet" href="theWebAPI/atlaskit-css-reset.css" />
     <link rel="stylesheet" href="theWebAPI/modal-video.min.css">
+    <link rel="stylesheet" href="theWebAPI/slick.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/commonStyle.css">
 
@@ -41,8 +42,10 @@
 <body class="the-body body-no-scroll">
 
     <!-- Code index page -->
+    <div id="top-ref-div-id"></div>
 
-    <!-- Navbar Code START -->
+    <!-- Navbar -->
+
     <div class="navbar-fixed">
         <nav class="site-theme-blue nf-div n-hide z-depth-0">
             <div class="navbar-div nav-wrapper">
@@ -101,41 +104,24 @@
         </li>
     </ul>
 
-    <!-- Navbar Code END -->
+    <!-- Amazon bannar -->
 
-    <div class="i-amazon-banner hide-on-small-only site-theme-white">
-        <div class="container">
-            <div class="row">
-                <div class="col l3 m4" style="display:flex;align-items:center">
-                    <p class="site-theme-grey-text fw-600">Interesting finds on Amazon</p>
-                </div>
-                <div class="col l1 m1">
-                    <img style="height:42px;margin-top:4px; margin-bottom:4px" src="assets/img/abi1.png">
-                </div>
+    <div style="position:relative" class="hide-on-med-and-down">
+        <div class="slick-slider-handle i-amazon-banner-div">
 
-                <div class="col l1 m1">
-                    <img style="height:42px;margin-top:4px; margin-bottom:4px" src="assets/img/abi2.png">
-                </div>
-                <div class="col l1 m1">
-                    <img style="height:42px;margin-top:4px; margin-bottom:4px" src="assets/img/abi3.png">
-                </div>
-                <div class="col l1 m1">
-                    <img style="height:42px;margin-top:4px; margin-bottom:4px" src="assets/img/abi4.png">
-                </div>
-                <div class="col l1 m1">
-                    <img style="height:42px;margin-top:4px; margin-bottom:4px" src="assets/img/abi5.png">
-                </div>
-                <div class="col l1 m1 hide-on-med-and-down">
-                    <img style="height:42px;margin-top:4px; margin-bottom:4px" src="assets/img/abi6.png">
-                </div>
-                <div class="col l3 m3 right-align">
-                    <img style="height:36px;margin-top:10px; margin-bottom:10px" src="assets/img/alogo.png">
-                </div>
-            </div>
+        </div>
+        <div style="height:56px;position:absolute;top:0;left:0;display:flex;align-items:center" class="site-theme-white">
+            <button class="a-prev-btn" style="background:transparent;border:none;height:56px">
+                <i class="material-icons">chevron_left</i>
+            </button>
+        </div>
+        <div style="height:56px;position:absolute;top:0;right:0;display:flex;align-items:center" class="site-theme-white">
+            <button class="a-next-btn" style="background:transparent;border:none;height:56px">
+                <i class="material-icons">chevron_right</i>
+            </button>
         </div>
     </div>
     <br>
-
 
     <!-- Search bar div for tabs and desktops - START -->
 
@@ -152,7 +138,7 @@
                 </p>
 
                 <!-- search bar start -->
-                <div class="card">
+                <div class="card" style="margin-bottom:0px;">
                     <form>
                         <div style="align-items: center;margin-bottom : 2px;border-bottom : 1px solid #f0f0f0; border-radius : 0px;" class="card horizontal search-card z-depth-0">
                             <i class="small material-icons site-theme-light-grey-text">search</i>
@@ -193,35 +179,65 @@
                 <!-- search bar end -->
 
 
-                <div class="row">
-                    <div class="col s12 m4 l3" style="display:flex; align-items:center">
+                <div class="row hide-on-med-only" style="margin-bottom:8px;">
+                    <div class="col s12 m12 l12">
+                        <div class="right-align">
+                            <a href="#!" style="display:inline-block;margin-right:16px;font-size:14px;padding-top:8px;" class="site-theme-pink-text fw-600">Or Just Browse</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hide-on-med-and-down">
+                    <div class="col s12 m12 l12">
+                        <div style="display:flex; align-items:center;margin-left:24px;">
+                            <div class="b-search-item">
+                                <img src="assets/bolt.svg" style="width: 22px; height: 22px;margin-left:0px">
+                                <p style="font-size:16px; font-weight: 400; padding-left: 12px;margin:0px;margin-right:auto;">Instant Price</p>
+                            </div>
+                            <div class="b-search-item">
+                                <img src="assets/door.png" style="width: 22px; height: 22px;margin-left:0px">
+                                <p style="font-size:16px; font-weight: 400; padding-left: 12px;margin:0px;margin-right:auto">Doorstep Delivery</p>
+                            </div>
+                            <div class="b-search-item">
+                                <img src="assets/cash.png" style="width: 22px; height: 22px;margin-left:0px">
+                                <p style="font-size:16px; font-weight: 400; padding-left: 12px;margin:0px;margin-right:auto">Easy Payment</p>
+                            </div>
+                            <div class="b-search-item">
+                                <img src="assets/girl.png" style="width: 22px; height: 22px;margin-left:0px">
+                                <p style="font-size:16px; font-weight: 400; padding-left: 12px;margin:0px;margin-right:auto">Local Support</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row hide-on-large-only" style="margin-top:21px;">
+
+                    <div class="col s12 m3 l3" style="display:flex; align-items:center">
+                        <img src="assets/door.png" style="width: 22px; height: 22px;margin-left:auto">
+                        <p style="font-size:16px; font-weight: 400; padding-left: 12px;margin-right:auto">Doorstep Delivery</p>
+                    </div>
+                    <div class="col s12 m3 l3" style="display:flex; align-items:center">
                         <img src="assets/bolt.svg" style="width: 22px; height: 22px;margin-left:auto">
                         <p style="font-size:16px; font-weight: 400; padding-left: 12px;margin-right:auto">Instant Price</p>
                     </div>
 
-                    <div class="col s12 m4 l3" style="display:flex; align-items:center">
-                        <img src="assets/door.png" style="width: 22px; height: 22px;margin-left:auto">
-                        <p style="font-size:16px; font-weight: 400; padding-left: 12px;margin-right:auto">Doorstep Delivery</p>
-                    </div>
 
-                    <div class="col s12 m4 l3" style="display:flex; align-items:center">
+
+                    <div class="col s12 m3 l3" style="display:flex; align-items:center">
                         <img src="assets/cash.png" style="width: 22px; height: 22px; margin-left : auto">
                         <p style="font-size:16px; font-weight: 400; padding-left: 12px; margin-right: auto">Easy Payment</p>
                     </div>
-                    <div class="col s12 m4 l3" style="display:flex; align-items:center">
+                    <div class="col s12 m3 l3" style="display:flex; align-items:center">
                         <img src="assets/girl.png" style="width: 22px; height: 22px; margin-left : auto">
                         <p style="font-size:16px; font-weight: 400; padding-left: 12px; margin-right: auto">Local Support</p>
                     </div>
                 </div>
 
 
-
-
             </div>
         </div>
     </div>
-
-    <!-- Search bar div for tabs and desktops - END -->
 
     <!-- Search bar div for mobile - START -->
 
@@ -306,7 +322,7 @@
         </div>
     </div>
 
-    <!-- Search bar div for mobile - END -->
+    <!-- Video div -->
 
     <div class="sp-wrapper valign-wrapper vid-div" style="background-image:url('assets/img/bg.jpg')">
         <div class="container" style="display:flex">
@@ -318,34 +334,44 @@
         </div>
     </div>
 
+    <!-- How it works div -->
 
     <div class="container ">
         <div class="center ">
-            <h2 class="hide-on-small-only site-theme-blue-text fw-600 hw-heading">How it works?</h2>
-            <h3 class="hide-on-med-and-up site-theme-blue-text fw-600 hw-heading">How it works?</h3>
+            <h2 class="hide-on-small-only site-theme-blue-text fw-600 hw-heading">How it works</h2>
+            <h3 class="hide-on-med-and-up site-theme-blue-text fw-600 hw-heading">How it works</h3>
             <div class="row hw-content-row" style="margin-top:48px;margin-bottom:48px;">
                 <div class="col l4 m6 s12 hw-col">
                     <div class="card">
                         <div class="center site-theme-pink site-theme-white-text">
-                            <p style="padding:8px;">Search & Place an Order</p>
+                            <p style="padding:16px;">Search & Place an Order</p>
                         </div>
-                        <img src="assets/img/ihw_1.svg " width="296 ">
+                        <img src="assets/img/ihw_1.png " width="296 ">
+                        <p class="center fw-600 site-theme-grey-text" style="padding:16px;padding-bottom:24px;padding-top:0px;">
+                            Search for the item you want, add it to cart, and proceed to Checkout to get instant rates in PKR
+                        </p>
                     </div>
                 </div>
                 <div class="col l4 m6 s12 hw-col">
                     <div class="card">
                         <div class="center site-theme-pink site-theme-white-text">
-                            <p style="padding:8px;">Confirm & Pay for your Order</p>
+                            <p style="padding:16px;">Confirm & Pay for your Order</p>
                         </div>
-                        <img src="assets/img/ihw_2.svg " width="296 ">
+                        <img src="assets/img/ihw_2.png " width="296 ">
+                        <p class="center fw-600 site-theme-grey-text" style="padding:16px;padding-bottom:24px;padding-top:0px;">
+                            Confirm the order and pay through your convenient payment method & receive a proof of payment
+                        </p>
                     </div>
                 </div>
                 <div class="col l4 m6 s12 hw-col">
                     <div class="card">
                         <div class="center site-theme-pink site-theme-white-text">
-                            <p style="padding:8px;">Receive your packages</p>
+                            <p style="padding:16px;">Receive your packages</p>
                         </div>
-                        <img src="assets/img/ihw_3.svg " width="296 ">
+                        <img src="assets/img/ihw_3.png " width="296 ">
+                        <p class="center fw-600 site-theme-grey-text" style="padding:16px;padding-bottom:24px;padding-top:0px;">
+                            In 10-14 business days, you will receive your packages at your doorstep<br>&nbsp;
+                        </p>
                     </div>
                 </div>
             </div>
@@ -359,22 +385,22 @@
             <h2 class="hide-on-small-only site-theme-blue-text fw-600 op-heading">Our partners</h2>
             <h3 class="hide-on-med-and-up site-theme-blue-text fw-600 op-heading">Our partners</h3>
             <div class="row op-content-row" style="margin-top:48px;margin-bottom:48px;">
-                <div class="col l2 m3 s4 op-col">
+                <div class="col l2 m4 s4 op-col">
                     <img style="width:100% " src="assets/img/p1.png ">
                 </div>
-                <div class="col l2 m3 s4 op-col">
+                <div class="col l2 m4 s4 op-col">
                     <img style="width:100% " src="assets/img/p2.png ">
                 </div>
-                <div class="col l2 m3 s4 op-col">
+                <div class="col l2 m4 s4 op-col">
                     <img style="width:100% " src="assets/img/p3.png ">
                 </div>
-                <div class="col l2 m3 s4 op-col">
+                <div class="col l2 m4 s4 op-col">
                     <img style="width:100% " src="assets/img/p4.png ">
                 </div>
-                <div class="col l2 m3 s4 op-col">
+                <div class="col l2 m4 s4 op-col">
                     <img style="width:80% " src="assets/img/p5.png ">
                 </div>
-                <div class="col l2 m3 s4 op-col">
+                <div class="col l2 m4 s4 op-col">
                     <img style="width:100% " src="assets/img/p6.png ">
                 </div>
 
@@ -495,7 +521,7 @@
             <div class="container site-theme-grey-text ">
                 <span class="hide-on-small-only ">© 2018 Nazdeeq. All rights reserved.</span>
                 <span class="hide-on-med-and-up ">© 2018 Copyrights | Nazdeeq</span>
-                <a class="site-theme-grey-text right " style="display:inline-flex;align-items:center " href="#top-ref-div-id ">
+                <a class="site-theme-grey-text right " style="display:inline-flex;align-items:center " href="#top-ref-div-id">
                     <span style="margin-right:6px;font-weight:300 ">Go to Top</span><i class="material-icons "> arrow_upward </i>
                 </a>
             </div>
@@ -509,6 +535,7 @@
 
     <script type="text/javascript " src="theWebAPI/jQuery.min.js "></script>
     <script type="text/javascript " src="theWebAPI/modal-video.js "></script>
+    <script type="text/javascript " src="theWebAPI/slick.js "></script>
     <script type="text/javascript " src="theWebAPI/materialize/js/materialize.min.js "></script>
     <script type="text/javascript " src="js/commonScript.js "></script>
     <script type="text/javascript " src="js/index.js "></script>
@@ -542,9 +569,73 @@
                 link: "# "
             }];
 
+
+            var bl = [
+                [{
+                    "img": "assets/img/abi1.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi2.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi3.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi4.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi5.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi6.png ",
+                    "href": "!#"
+                }],
+                [{
+                    "img": "assets/img/abi1.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi2.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi3.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi4.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi5.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi6.png ",
+                    "href": "!#"
+                }],
+                [{
+                    "img": "assets/img/abi1.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi2.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi3.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi4.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi5.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi6.png ",
+                    "href": "!#"
+                }]
+            ];
+
             search_bar_set_explore_popular_list(explore, popular);
-
-
+            $(".slick-slider-handle").append(iAmazonBanner(bl))
+            $('.slick-slider-handle').slick({
+                prevArrow: ".a-prev-btn",
+                nextArrow: ".a-next-btn"
+            });
         })
     </script>
 

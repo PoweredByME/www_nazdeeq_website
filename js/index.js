@@ -11,7 +11,20 @@ function search_bar_set_explore_popular_list(explore, popular)
 function windowOnLoad() {
     $(".the-body").removeClass("body-no-scroll");
     $(".button-collapse").sideNav();
+    $(".dash-status").each(function(i, ele) {
+        var content = $(this).html().trim().toUpperCase().replace(/\s/g, '');
+        if (content == "PENDING") {
+            $(this).addClass("orange-text");
+        } else if (content == "COMPLETED") {
+            $(this).addClass("green-text");
+        } else if (content == "INPROGRESS") {
+            $(this).addClass("blue-text");
+        }
+    });
+
     seachBarInit();
+    windowOnScroll();
+    windowOnResize();
 }
 
 // This function gets called when the window gets resized
@@ -123,12 +136,15 @@ function seachBarInit() {
     $(".myhideclass ").removeClass("hide");
     var sil_ele = $(".search-in-large");
     var sis_ele = $(".search-in-small");
-
+    var isd_ele = $(".i-search-div");
     sil_ele.focus(function() {
+        isd_ele.addClass("i-search-div-search-focus");
         $(".search-sugg-large").show(500)
+
     });
     sil_ele.focusout(function() {
-        $(".search-sugg-large").hide(500)
+        $(".search-sugg-large").hide(500);
+        isd_ele.removeClass("i-search-div-search-focus");
     });
 
     sis_ele.focus(function() {
@@ -175,4 +191,23 @@ function getSearchLinksString(explore_links, popular_searches) {
     return final_string;
 
 
+}
+
+
+function iAmazonBanner(banner_data_list) {
+    s = "";
+    banner_data_list.forEach(function(obj, i) {
+        s += iAmazonBanner_template(obj);
+    });
+
+    return s;
+}
+
+function iAmazonBanner_template(items_list) {
+    var s = '<div class="i-amazon-banner site-theme-white"><div class="container"><div class="row"><div class="col l3 m4" style="display:flex;align-items:center"><p class="site-theme-grey-text fw-600">Interesting finds on Amazon</p></div>';
+    items_list.forEach(function(obj, i) {
+        s += '<div class="col l1 m1"><a href="' + obj.href + '"><img style="height:42px;margin-top:4px; margin-bottom:4px" src="' + obj.img + '"></a></div>';
+    });
+    s += '<div class="col l3 m3" style="display:flex;align-items:center"><a style="margin-left:auto" target="_blank" href="https://www.amazon.com/"><img style="height:36px;margin-top:10px; margin-bottom:10px" src="assets/img/alogo.png"></a></div></div></div></div>';
+    return s;
 }
