@@ -34,14 +34,16 @@
     <link rel="stylesheet" href="theWebAPI/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="theWebAPI/atlaskit-rui.css" />
     <link rel="stylesheet" href="theWebAPI/atlaskit-css-reset.css" />
+    <link rel="stylesheet" href="theWebAPI/slick.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/commonStyle.css">
     <link rel="stylesheet" href="css/checkout.css">
 
-    <script src="theWebAPI/jQuery.min.js"></script>
-    <script src="theWebAPI/materialize/js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/commonScript.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <style>
+        .active {
+            color: #EC2F85 !important;
+        }
+    </style>
 
 </head>
 
@@ -99,32 +101,141 @@
         </li>
         <li>
             <a class="black-text site-theme-pink site-theme-white-text" href="#!" style="font-weight:400">
-                    Sign Out
-                </a>
+                Sign Out
+            </a>
         </li>
     </ul>
 
     <!-- Navbar Code END -->
 
-    <br>
-    <br>
-    <br>
+    <div style="position:relative" class="hide-on-med-and-down">
+        <div class="slick-slider-handle i-amazon-banner-div">
+
+        </div>
+        <div style="height:56px;position:absolute;top:0;left:0;display:flex;align-items:center" class="site-theme-white">
+            <button class="a-prev-btn" style="background:transparent;border:none;height:56px">
+                    <i class="material-icons">chevron_left</i>
+                </button>
+        </div>
+        <div style="height:56px;position:absolute;top:0;right:0;display:flex;align-items:center" class="site-theme-white">
+            <button class="a-next-btn" style="background:transparent;border:none;height:56px">
+                    <i class="material-icons">chevron_right</i>
+            </button>
+        </div>
+    </div>
+
 
 
     <div class="row">
-        <div class="col l8 m12 s12">
-            <div style="border-bottom:2px solid #bbbbbb;">
-                <ul id="tabs-swipe-demo" class="tabs">
-                    <li class="tab col s4"><a class="active" href="#test-swipe-1">Test 1</a></li>
-                    <li class="tab col s4"><a href="#test-swipe-2">Test 2</a></li>
-                    <li class="tab col s4"><a href="#test-swipe-3">Test 3</a></li>
-                </ul>
+        <div class="col l9 m12 s12">
+            <div class="container">
+                <div style="border-bottom:2px solid #bbbbbb;">
+                    <ul id="tabs-swipe-demo" class="tabs">
+                        <li class="tab col s4"><a class="active" href="#test-swipe-1">CHECKOUT</a></li>
+                        <li class="tab col s4"><a href="#test-swipe-2">SHIPPING INFO</a></li>
+                        <li class="tab col s4"><a href="#test-swipe-3">PAYMENT METHOD</a></li>
+                    </ul>
+                </div>
+                <div id="test-swipe-1" class="col s12">
+                    <div class="site-theme-grey-text">
+                        <table class="responsive-table co-table co-right-margin-colored">
+                            <thead class="co-table-head">
+                                <tr>
+                                    <th>Item</th>
+                                    <th></th>
+                                    <th>Hash</th>
+                                    <th>Price</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="font-size:12px;">
+                                    <td>
+                                        <img class="co-item-img" src="/assets/girl.png" />
+                                    </td>
+                                    <td>
+                                        <p>Apple MacBook Pro 13.3 inch laptop with Touch Bar(2.9 GHz Dual Core Intel Corei5)</p>
+                                    </td>
+                                    <td>3.63kg</td>
+                                    <td>$1739.00</td>
+                                    <td>
+                                        <p class="site-theme-pink-text fw-600">$1739.00</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="row" style="margin-top:56px;">
+                            <div class="col s12 m6 l6">
+                                <div class="card site-theme-white">
+                                    <div class="card-content site-theme-grey-text">
+                                        <span class="card-title" style="display: flex;align-items: center;"><i class="tiny material-icons  airplane">airplanemode_active</i>Shipping Notice</span>
+                                        <hr/>
+                                        <p>Please note that the estimated arrival time for orders shipping from within the US is 10-14 business days.If from another country,it will require more time.We cannot control how items ship from their sources. You
+                                            may recieve from multiple packages that will be delivered to you as the become available</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col s12 m6 l6">
+                                <div class="co-details">
+                                    <p class="co-details-title">Items in Cart :</p>
+                                    <p class="co-details-value">1</p>
+                                </div>
+                                <div class="co-details">
+                                    <p class="co-details-title">Sub-total :</p>
+                                    <p class="co-details-value">$1739.00</p>
+                                </div>
+                                <div class="co-details">
+                                    <p class="co-details-title">US SHipping and Taxes :</p>
+                                    <p class="co-details-value">$0.0</p>
+                                </div>
+                                <div class="co-details">
+                                    <p class="co-details-title">Total Weight :</p>
+                                    <p class="co-details-value">3.63kg</p>
+                                </div>
+                                <div class="co-details">
+                                    <p class="co-details-title">International Shipping :</p>
+                                    <p class="co-details-value">$66.9</p>
+                                </div>
+                                <div class="co-details">
+                                    <p class="co-details-title">Local Customs and Taxes :</p>
+                                    <p class="co-details-value">$65.4</p>
+                                </div>
+                                <div class="co-details">
+                                    <p class="co-details-title">Fees :</p>
+                                    <p class="co-details-value">$67.39</p>
+                                </div>
+                                <div class="co-details co-total-detail">
+                                    <p class="co-details-title">Total :</p>
+                                    <p class="co-details-value">$1938.2</p>
+                                </div>
+                                <div class="co-details">
+                                    <p class="co-details-title"></p>
+                                    <p class="co-details-value">PKR(2045,473)</p>
+                                </div>
+                                <div class="right" style="padding-top:24px;">
+                                    <a href="#!" class="ak-button site-theme-orange site-theme-white-text">Proceed to Shipping</a>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="!#" class="site-theme-light-grey-text" style="display:inline-flex;align-items:center">
+                                    <i class="material-icons">arrow_back</i><span> Return to Amazon</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="test-swipe-2" class="col s12"></div>
+                <div id="test-swipe-3" class="col s12"></div>
             </div>
-            <div id="test-swipe-1" class="col s12">Test 1</div>
-            <div id="test-swipe-2" class="col s12">Test 2</div>
-            <div id="test-swipe-3" class="col s12">Test 3</div>
         </div>
-        <div class="col l4 hide-on-med-and-down"></div>
+
+
+        <div class="col l3 hide-on-med-and-down"></div>
+
+
     </div>
 
 
@@ -323,17 +434,87 @@
         </div>
     </div>
 
-    -->
+    <script src="theWebAPI/jQuery.min.js"></script>
+    <script src="theWebAPI/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript " src="theWebAPI/slick.js "></script>
+    <script type="text/javascript" src="js/commonScript.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            $('select').material_select();
-        });
-    </script>
+
     <script>
         window.onload = windowOnLoad;
         window.onresize = windowOnResize;
         window.onscroll = windowOnScroll;
+        $(document).ready(function() {
+            $(document).ready(function() {
+                $('select').material_select();
+            });
+            var bl = [
+                [{
+                    "img": "assets/img/abi1.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi2.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi3.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi4.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi5.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi6.png ",
+                    "href": "!#"
+                }],
+                [{
+                    "img": "assets/img/abi1.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi2.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi3.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi4.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi5.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi6.png ",
+                    "href": "!#"
+                }],
+                [{
+                    "img": "assets/img/abi1.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi2.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi3.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi4.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi5.png ",
+                    "href": "!#"
+                }, {
+                    "img": "assets/img/abi6.png ",
+                    "href": "!#"
+                }]
+            ];
+
+            $(".slick-slider-handle").append(iAmazonBanner(bl))
+            $('.slick-slider-handle').slick({
+                prevArrow: ".a-prev-btn",
+                nextArrow: ".a-next-btn"
+            });
+        });
     </script>
 </body>
 
