@@ -4,7 +4,7 @@
 <head>
 
     <title>
-        Nazdeeq | Log In
+        Nazdeeq | Thank You
     </title>
 
     <!--METADATA-->
@@ -28,15 +28,15 @@
     <!--STYLESHEETS-->
     <!--<link rel="icon" href="assets/images/NFAC-Logo%201.png">-->
     <link rel="stylesheet" href="theWebAPI/materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="theWebAPI/atlaskit-rui.css" />
-    <link rel="stylesheet" href="theWebAPI/atlaskit-css-reset.css" />
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/commonStyle.css">
+    <link rel="stylesheet" href="css/index.css">
+
 
 </head>
 
 <body class="the-body body-no-scroll">
 
+    <!-- Code index page -->
     <div id="top-ref-div-id"></div>
 
     <!-- Navbar Code START -->
@@ -54,22 +54,28 @@
                 <ul class="right hide-on-med-and-down nav-fv-option-ul">
                     <li>
                         <a href="!#" class="site-theme-white-text" style="display:inline-flex; align-items:center">
-                            <span>Blog</span>
-                        </a>
-
-                        <a href="!#" class="site-theme-white-text" style="display:inline-flex; align-items:center">
-                            <span>How it works?</span>
-                        </a>
-
-                        <a href="!#" class="site-theme-white-text" style="display:inline-flex; align-items:center">
-                            <span>Sign Up</span>
-                        </a>
-
-                        <a href="!#" class="site-theme-white-text" style="display:inline-flex; align-items:center">
-                            <span>Log In</span>
+                            <span>My Orders</span>
                         </a>
                     </li>
+                    <li>
+                        <!-- Dropdown Trigger -->
+                        <a class='dropdown-button site-theme-blue site-theme-white-text' href='#' data-activates='dropdown1' style="display:flex;height:56px;">
+                            <span>Muhammad Yousaf</span><i class="material-icons">arrow_drop_down</i>
+                        </a>
+
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">Settings</a></li>
+                            <li><a href="#!">Sign Out</a></li>
+                        </ul>
+
+                    </li>
                 </ul>
+
+
+
+
+
             </div>
         </nav>
     </div>
@@ -78,22 +84,17 @@
     <ul class="side-nav" id="mobile-demo">
         <li>
             <a class="black-text" href="#!" style="font-weight:400">
-                <i class="material-icons">format_align_left</i> Blog
+                <i class="material-icons">person</i> Muhammad Yousaf
             </a>
         </li>
         <li>
             <a class="black-text" href="#!" style="font-weight:400">
-                <i class="material-icons">info</i> How it works?
+                <i class="material-icons">settings</i> Settings
             </a>
         </li>
         <li>
-            <a class="black-text" href="#!" style="font-weight:400">
-                <i class="material-icons">group_add</i> Sign Up
-            </a>
-        </li>
-        <li>
-            <a class="black-text" href="#!" style="font-weight:400">
-                <i class="material-icons">lock_open</i> Log In
+            <a class="black-text site-theme-pink site-theme-white-text" href="#!" style="font-weight:400">
+                Sign Out
             </a>
         </li>
     </ul>
@@ -101,76 +102,93 @@
 
 
 
-    <!-- Code login page -->
 
-    <div class="sp-wrapper valign-wrapper">
-        <div class="container sp-lgi-content-container">
-            <div class="sp-lgi-card-container center">
-                <div class="hide-on-small-only">
-                    <!-- fb & google buttton for med and up -->
-                    <a href="#!">
-                        <button class="sp-lgi-login-btn sp-lgi-login-btn--facebook">
-                                    Continue with Facebook
-                                </button>
-                    </a>
-
-                    <a href="#!">
-                        <button class="sp-lgi-login-btn sp-lgi-login-btn--google">
-                                    Continue with Google +
-                                </button>
-                    </a>
-                </div>
-
-                <div class="hide-on-med-and-up">
-                    <!-- fb & google buttton for small -->
-                    <a href="#!">
-                        <button class="sp-lgi-login-btn sp-lgi-login-btn--facebook" style="width:100%">
-                                        <span style="display:inline-block; text-align:center;width:90%;">Continue with Facebook</span>
-                                </button>
-                    </a>
-
-                    <a href="#!">
-                        <button class="sp-lgi-login-btn sp-lgi-login-btn--google" style="width:100%">
-                                        <span style="display:inline-block; text-align:center;width:90%;">Continue with Google +</span>
-                                </button>
-                    </a>
-                </div>
-
-                <div class="card sp-lgi-card">
-                    <h1 class="aki center">Login to Nazdeeq</h1>
-                    <div class="sp-lgi-form-div">
-                        <form action="#!">
-                            <input class="ak-field-text" type="text" name="userName" placeholder="User Name">
-                            <input class="ak-field-password" type="password" name="password" placeholder="Password">
-                            <div>
-                                <a href="#!" class="site-theme-orange-text right lgi-fp-a">Forgot Password?</a>
-                                <br>
-                                <br>
-                            </div>
-                            <div class="error-div red hide">
-                                <p class="error-text"></p>
-                            </div>
+    <!-- Navbar Code END -->
 
 
-                            <div class="center">
-                                <input type="submit" class="sp-btn  center site-theme-orange site-theme-white-text site-anime site-btn-hover" value="Log In">
-                                <p class="site-theme-light-grey-text center" style="font-size:14px;">Don't have an account?</p>
-                                <a href="#!" class="site-theme-orange-text">CREATE ONE NOW</a>
-                            </div>
 
 
-                        </form>
-                    </div>
-                </div>
 
-            </div>
-
+    <div class="container pco-thanks-heading-container">
+        <div class="center">
+            <h2 class="hide-on-small-only site-theme-pink-text fw-600 ">THANK YOU FOR YOUR ORDER</h2>
+            <h3 class="hide-on-med-and-up site-theme-pink-text fw-600 ">THANK YOU FOR YOUR ORDER</h3>
         </div>
-
     </div>
 
+    <div class="container">
+        <h5 class="site-theme-grey-text fw-400">We have received your order successfully!</h5>
+        <p class="site-theme-light-grey-text fw-400">Your order number
+            <span class="pco-order-number site-theme-pink-text fw-600">#245</span> containing
+            <span class="pco-item-quantity site-theme-grey-text fw-600">1 item</span> has been placed. Here are the next steps ...
+        </p>
+        <div class="row" style="margin-top:48px;margin-bottom:48px;">
+            <div class="col l4 m6 s12  ">
+                <div class="card">
+                    <div class="center site-theme-pink site-theme-white-text">
+                        <p style="padding:16px;">Happening Now</p>
+                    </div>
+                    <p class="fw-600 site-theme-grey-text" style="padding:16px;padding-bottom:0px;padding-top:0px;">
+                        You are going to receive a phone call shortly to confirm your order
+                    </p>
+                    <img src="assets/img/ihw_1.png " width="296 ">
+                    <p class=" fw-400 site-theme-light-grey-text" style="padding:16px;padding-bottom:24px;padding-top:0px;display:flex;align-items:center">
+                        <span style="font-size:14px;">We are calling you at 
+                            <span class="pco-phone-number">+03333333333</span> . If you can't answer, we'll call you back at a different time</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col l4 m6 s12  ">
+                <div class="card">
+                    <div class="center site-theme-pink site-theme-white-text">
+                        <p style="padding:16px;">Once Confirmed</p>
+                    </div>
+                    <p class="fw-600 site-theme-grey-text" style="padding:16px;padding-bottom:0px;padding-top:0px;">
+                        You will be shortly connected with our payment collection partner for payment.
+                    </p>
+                    <img src="assets/img/ihw_2.png " width="296 ">
+                    <p class="fw-600 site-theme-grey-text" style="padding:16px;padding-bottom:0px;padding-top:0px;margin-bottom:4px;">
+                        Upon confirming, you'll receive:
+                    </p>
+                    <p class=" fw-400 site-theme-light-grey-text" style="padding:16px;padding-bottom:24px;padding-top:0px;margin-top:0px;display:flex;align-items:center">
+                        <span style="font-size:14px;">A payment confirmation email to
+                            <span class="pco-email">email@email.com</span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="col l4 m6 s12">
+                <div class="card">
+                    <div class="center site-theme-pink site-theme-white-text">
+                        <p style="padding:16px;">In 10 - 14 Business Days *</p>
+                    </div>
+                    <p class="fw-600 site-theme-grey-text" style="padding:16px;padding-bottom:0px;padding-top:0px;">
+                        Our courier partner will deliver your stuff right to your doorstep!
+                    </p>
+                    <img src="assets/img/ihw_3.png " width="296 ">
+                    <p class="fw-600 site-theme-grey-text" style="padding:16px;padding-bottom:0px;padding-top:0px;margin-bottom:4px;">
+                        Please note:
+                    </p>
+                    <p class=" fw-400 site-theme-light-grey-text" style="padding:16px;padding-bottom:24px;padding-top:0px;margin-top:0px;display:flex;align-items:center">
+                        <span style="font-size:14px;">You might receive multiple packages</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <div class="container">
+        <p class="site-theme-light-grey-text">
+            * 10 - 14 business days is the average time for delivery if items ship from within the US. They may take longer if shipping from outside the US.
+        </p>
+    </div>
+    <div class="container" style="padding-bottom:56px;">
+        <div class="right">
+            <a href="index.html" class="site-theme-pink-text" style="display:inline-flex; align-items:center">
+                <span class="site-theme-grey-text" style="display:inline-flex; align-items:center"><i class="material-icons">arrow_back</i>Awesome, take me</span><span>&nbsp;back to the homepage</span>
+            </a>
+        </div>
+    </div>
 
     <!-- Footer Code START -->
 
@@ -264,7 +282,7 @@
             <div class="container site-theme-grey-text ">
                 <span class="hide-on-small-only ">© 2018 Nazdeeq. All rights reserved.</span>
                 <span class="hide-on-med-and-up ">© 2018 Copyrights | Nazdeeq</span>
-                <a class="site-theme-grey-text right " style="display:inline-flex;align-items:center " href="#top-ref-div-id ">
+                <a class="site-theme-grey-text right " style="display:inline-flex;align-items:center " href="#top-ref-div-id">
                     <span style="margin-right:6px;font-weight:300 ">Go to Top</span><i class="material-icons "> arrow_upward </i>
                 </a>
             </div>
@@ -273,10 +291,6 @@
 
 
     <!-- Footer Code END -->
-
-
-
-
     <script type="text/javascript" src="theWebAPI/jQuery.min.js"></script>
     <script type="text/javascript" src="theWebAPI/materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/commonScript.js"></script>
@@ -287,6 +301,11 @@
         window.onscroll = windowOnScroll;
     </script>
 
+
+
+
+
+
 </body>
 
-</html>
+</html
