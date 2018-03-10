@@ -131,9 +131,9 @@
             <div class="container">
                 <div style="border-bottom:2px solid #bbbbbb;">
                     <ul id="tabs-swipe-demo" class="tabs">
-                        <li class="tab col s4"><a class="active" href="#test-swipe-1">CHECKOUT</a></li>
-                        <li class="tab col s4"><a href="#test-swipe-2">SHIPPING INFO</a></li>
-                        <li class="tab col s4"><a href="#test-swipe-3">PAYMENT METHOD</a></li>
+                        <li class="tab col s4"><a class="active"  href="#test-swipe-1">CHECKOUT</a></li>
+                        <li class="tab col s4"><a  href="#test-swipe-2">SHIPPING INFO</a></li>
+                        <li class="tab col s4"><a  href="#test-swipe-3">PAYMENT METHOD</a></li>
                     </ul>
                 </div>
                 <div id="test-swipe-1" class="col s12">
@@ -227,8 +227,110 @@
                         </div>
                     </div>
                 </div>
-                <div id="test-swipe-2" class="col s12"></div>
-                <div id="test-swipe-3" class="col s12"></div>
+                <div id="test-swipe-2" class="col s12">
+                    <div class="row">
+                        <div class="col l12 s12 m12">
+                            <h5>Shipping Information</h5>
+                        </div>
+                        <div style="margin-bottom:8px; padding-left:64px;margin-right:8px;" class="col l6 s12 m12 current-address site-theme-grey-text">
+                            <input type="radio" id="sel" >
+                            <label style="font-family:'Roboto';" for="sel" >Select</label>
+                            <p style="padding-left:32px;" p>Jamie Larson</p>
+                            <p style="padding-left:32px;">Unit 2 Green Mount Retail Park</p>
+                            <p style="padding-left:32px;">Halifax</p>
+                            <p style="padding-left:32px;">HX1 5QN</p>
+                            <p style="padding-left:32px;">Tel : <span>03443325931</span></p>
+                            <p style="padding-left:32px;"><a class="site-theme-orange-text" href="#">Edit Address</a></p>
+                        </div>
+
+                        <div style="min-height:268px;" class="col l5     s12 m12 current-address add-address">
+                            <h5  style="font-size:16px;" class="center site-theme-orange-text" >Add a new address</h5>
+                        </div>
+                        <div style="padding-right:0px;margin-top:8px;" class="col l11 s12 m12" >
+                                <i class="tiny material-icons" >arrow_back</i>
+                                <p style="display:inline" class="left-align" >Return to checkout</p>
+                                <a style="display:inline;" class="right pay-btn site-theme-orange site-theme-white-text site-anime site-btn-hover" >Proceed to Payment</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="test-swipe-3" class="col s12">
+                    <div style=" margin-bottom: 24px;" class="row">
+                            <div class="col l12 s12 m12">
+                                <h5>Payment Selection</h5>
+                            </div>
+                        <div style="padding:16px;" class="col l11 s12 m12 cash-collect marg-btm">
+                            <div>
+                            <input id="cash" name="payment" type="radio" value="payment">
+                            <label class="left-align" for="cash">Cash Collect</label> 
+                            <img class="right" src="assets/cash.jpg">
+                            </div>
+                             <p class=left-align" style="margin-right:16px; " >Please make Sure you have exact amount in hands when delivery guy comes</p>
+                                
+                        </div>
+                        <div style="padding:16px;" class="col l11 s12 m12 cash-collect marg-btm">
+                                <div>
+                                    <input id="ccard" name="payment" type="radio" value="payment">
+                                    <label class="left-align" for="ccard">Credit Card</label>
+                                    <img class="right" src="assets/ccards.jpg"> 
+                                </div>
+                                <p class=left-align" style="margin-right:16px; " >Safe money transfer using your bank account. Visa, Maestro, Discover, American Express</p>
+                                
+                                <div class="row">
+                                    
+                                    <div class="col l12 m12 s12">
+                                            <h6>Card Number</h6>
+                                        <div style="border-radius:4px;height:2.5rem;display:flex;align-items:flex-start; border:1px solid #c0c0c0;" >
+                                            <input class="ak-field-text ak-text-mod" placeholder="0000 0000 0000 0000" >
+                                            <i class="material-icons" >credit_card</i>
+                                        </div>
+                                    </div>
+                                    <div class="col l5 m12 s12">
+                                            <h6>Name on Card</h6>
+                                            <div style="border-radius:4px;height:2.5rem;display:flex;align-items:flex-start; border:1px solid #c0c0c0;" >
+                                            <input class="ak-field-text ak-text-mod" >
+                                            </div>
+                                    </div>
+                                    <div class="col l3 m12 s12">
+                                            <h6>Expiry Date</h6>
+                                            <div style="border-radius:4px;height:2.5rem;display:flex;align-items:flex-start; border:1px solid #c0c0c0;" >
+                                                    <input class="ak-field-text ak-text-mod" >
+                                                    </div>
+                                    </div>
+                                    <div class="col l3 m12 s12">
+                                            <h6>CVV Code</h6>
+                                            <div style="border-radius:4px;height:2.5rem;display:flex;align-items:flex-start; border:1px solid #c0c0c0;" >
+                                                    <input class="ak-field-text ak-text-mod" >
+                                                    <i class="material-icons" >help</i>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div style="padding:16px;" class="col l11 s12 m12 cash-collect marg-btm">
+                                <div>
+                                <input id="simsim" name="payment" type="radio" value="payment">
+                                <label class="left-align" for="simsim">SimSim</label> 
+                                <img class="right" src="assets/simsim.jpg">
+                                </div>
+                                 <p class=left-align" style="margin-right:16px; " >You will be redirected to SimSim website to complete your purchase securely</p>
+                                    
+                            </div>
+                        <div style="padding:16px;" class="col l11 s12 m12 cash-collect marg-btm">
+                                    <div>
+                                    <input id="bank" name="payment" type="radio" value="payment">
+                                    <label class="left-align" for="bank">Bank Transfer</label> 
+                                    <img class="right" src="assets/bank.jpg">
+                                    </div>
+                                     <p class=left-align" style="margin-right:16px; " >You will be redirected to SimSim website to complete your purchase securely</p>
+                                     
+                            </div>
+                        <div style="padding-right:0px;" class="col l11 s12 m12" >
+                            <i class="tiny material-icons" >arrow_back</i>
+                            <p style="display:inline" class="left-align" >Return To Checkout</p>
+                            <a style="display:inline;" class="right pay-btn site-theme-orange site-theme-white-text site-anime site-btn-hover" >Complete Order</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -244,7 +346,7 @@
 
 
 
-
+<!--
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l8">
@@ -264,6 +366,7 @@
                     <h6 class="col s2" >Total</h6>
                 </div>
                 -->
+                <!--
                 <table class="responsive-table co-table co-right-margin-colored">
                     <thead class="co-table-head">
                         <tr>
@@ -433,7 +536,7 @@
             </div>
         </div>
     </div>
-
+-->
     <script src="theWebAPI/jQuery.min.js"></script>
     <script src="theWebAPI/materialize/js/materialize.min.js"></script>
     <script type="text/javascript " src="theWebAPI/slick.js "></script>
@@ -448,6 +551,7 @@
         $(document).ready(function() {
             $(document).ready(function() {
                 $('select').material_select();
+                $(".add-address").height($(".add-address").prev().height());
             });
             var bl = [
                 [{
