@@ -141,3 +141,65 @@
 .co-disc {
     font-size: 10px !important;
 }
+
+.current-address{
+    border: 2px solid #C0C0C0 !important;
+    border-radius:6px !important;
+}
+.pay-btn{
+    padding:8px !important;
+    border-radius:5px !important;
+    margin-right: 0px !important;
+}
+
+.cash-collect{
+    border: 1.5px solid #DCDCDC;
+    border-radius: 5px;
+}
+
+.cash-collect p{
+    padding-left:35px !important; 
+}
+
+.marg-btm{
+    margin-bottom: 24px !important;
+}
+
+label{
+    color: black !important;
+    
+}
+
+.ak-text-mod{
+    background: white !important;
+    border:none !important;
+    border-bottom: none!important;
+}
+.ak-text-mod:hover{
+    background: none!important;
+}
+
+h6{
+    color:#767676 !important;
+    font-family: 'Roboto' !important;   
+}
+
+.add-address{
+    height: 90%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    .add-address{
+        min-height: 277.5px !important;
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width:1234px) {
+    .add-address{
+        min-height: 288px !important;
+    }
+}
